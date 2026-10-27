@@ -7,9 +7,55 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <main class="page">
+  <main class="schedule">
     <h1>Расписание компьютерной лаборатории</h1>
-    <!-- Создайте здесь семантическую таблицу по заданию -->
+    
+    <table class="schedule__table">
+      <caption>Занятость лаборатории на неделю</caption>
+      
+      <thead>
+        <tr>
+          <th scope="col">День</th>
+          <th scope="col">09:00–10:30</th>
+          <th scope="col">10:40–12:10</th>
+          <th scope="col">12:40–14:10</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <th scope="row">Понедельник</th>
+          <td>Веб-разработка</td>
+          <td>JavaScript</td>
+          <td>Свободно</td>
+        </tr>
+        <tr>
+          <th scope="row">Вторник</th>
+          <td>HTML и CSS</td>
+          <td>Свободно</td>
+          <td>Git</td>
+        </tr>
+        <tr>
+          <th scope="row">Среда</th>
+          <td colspan="3">Техническое обслуживание</td>
+        </tr>
+        <tr>
+          <th scope="row">Четверг</th>
+          <td>React</td>
+          <td>Node.js</td>
+          <td>Свободно</td>
+        </tr>
+      </tbody>
+      
+      <tfoot>
+        <tr>
+          <th scope="row">Свободных окон</th>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
   </main>
 </body>
 </html>
